@@ -38,6 +38,14 @@
     <build>
         <plugins>
             <plugin>
+                  <groupId>org.codehaus.mojo</groupId>
+                  <artifactId>exec-maven-plugin</artifactId>
+                  <version>3.1.0</version>
+                  <configuration>
+                          <mainClass>com.example.App</mainClass> <!-- Replace with your actual fully qualified class name -->
+                  </configuration>
+            </plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.5.1</version>
